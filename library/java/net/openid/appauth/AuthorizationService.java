@@ -646,7 +646,7 @@ public class AuthorizationService {
             } catch (IOException ex) {
                 Logger.debugWithStack(ex, "Failed to complete exchange request");
                 mException = AuthorizationException.fromTemplate(
-                        GeneralErrors.NETWORK_ERROR, ex);
+                        GeneralErrors.NETWORK_ERROR1, ex);
             } catch (JSONException ex) {
                 Logger.debugWithStack(ex, "Failed to complete exchange request");
                 mException = AuthorizationException.fromTemplate(
@@ -794,7 +794,7 @@ public class AuthorizationService {
             } catch (IOException ex) {
                 Logger.debugWithStack(ex, "Failed to complete registration request");
                 mException = AuthorizationException.fromTemplate(
-                        GeneralErrors.NETWORK_ERROR, ex);
+                        GeneralErrors.NETWORK_ERROR2, ex);
             } catch (JSONException ex) {
                 Logger.debugWithStack(ex, "Failed to complete registration request");
                 mException = AuthorizationException.fromTemplate(

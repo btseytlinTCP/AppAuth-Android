@@ -391,7 +391,7 @@ public class AuthorizationServiceConfiguration {
             } catch (IOException ex) {
                 Logger.errorWithStack(ex, "Network error when retrieving discovery document");
                 mException = AuthorizationException.fromTemplate(
-                        GeneralErrors.NETWORK_ERROR,
+                        GeneralErrors.NETWORK_ERROR3,
                         ex);
             } catch (JSONException ex) {
                 Logger.errorWithStack(ex, "Error parsing discovery document");

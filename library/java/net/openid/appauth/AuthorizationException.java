@@ -175,6 +175,12 @@ public final class AuthorizationException extends Exception {
          */
         public static final AuthorizationException NETWORK_ERROR =
                 generalEx(3, "Network error");
+        public static final AuthorizationException NETWORK_ERROR1 =
+                generalEx(31, "Network error");
+        public static final AuthorizationException NETWORK_ERROR2 =
+                generalEx(32, "Network error");
+        public static final AuthorizationException NETWORK_ERROR3 =
+                generalEx(32, "Network error");
 
         /**
          * Indicates a server error occurred.
